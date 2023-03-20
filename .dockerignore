@@ -1,0 +1,6 @@
+cov_profile/
+
+.DS_Store
+.env
+*.lcov
+*.pem
