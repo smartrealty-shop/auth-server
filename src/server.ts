@@ -20,6 +20,7 @@ app.use(logRequest);
 
 app.use(oakCors({
   origin: /^.+localhost:(3000|3001)$/, // FIXME what is that magical number for?
+  credentials: true,
   optionsSuccessStatus: 200,
 }));
 appRouter.init(app);
