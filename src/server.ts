@@ -19,7 +19,7 @@ router.get<string>("/api/healthz", (ctx: RouterContext<string>) => {
 app.use(logRequest);
 
 app.use(oakCors({
-  origin: /^.+localhost:(3000|3001)$/, // FIXME what is that magical number for?
+  origin: /^.+localhost:(1993|8000)$/,
   credentials: true,
   optionsSuccessStatus: 200,
 }));
